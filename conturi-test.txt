@@ -1,0 +1,42 @@
+================================================================
+  TICKETA - CONTURI DE TEST
+================================================================
+
+Conturi pre-existente din importul DB (parolele sunt in clar in
+backup-ul Supabase original; la prima logare reusita sunt rehash-uite
+automat in BCrypt).
+
+
+CLIENT (utilizator obisnuit, cumpara bilete):
+  Email:  tudor.chirita@gmail.com
+  Parola: 123456
+
+  Email:  conttest@gmail.com
+  Parola: 123456
+
+  Email:  test@test.com
+  Parola: 1234
+
+
+MANAGER (poate creea + edita + sterge evenimente):
+  Email:  andrei.selaru@yahoo.com
+  Parola: 123456
+  Companie: La Munca SRL
+
+  Email:  andrei.kevin23@company.com
+  Parola: 12345
+  Companie: Company SRL
+
+
+================================================================
+  NOTE
+================================================================
+
+- Email-ul folosit la login este case-insensitive (DB returneaza
+  exact ce ai introdus in tabelul Users).
+- Daca te logezi reusit cu parola in clar, AuthService.Login face
+  "lazy upgrade": rescrie parola ca hash BCrypt in DB. Urmatoarea
+  logare verifica hash-ul.
+- Pentru un cont nou foloseste pagina "Inregistreaza-te" din login.
+- Manager-ul are butoanele "Creeaza eveniment" si "Evenimentele mele"
+  vizibile in sidebar; clientul nu.
