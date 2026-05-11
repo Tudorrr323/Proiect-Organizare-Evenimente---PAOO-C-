@@ -46,7 +46,7 @@ namespace Proiect_PAOO_Organizare_Evenimente.DAL
                      AND (@dmin::timestamptz IS NULL OR date >= @dmin)
                      AND (@dmax::timestamptz IS NULL OR date <= @dmax)
                      {ActiveOnly}
-                   ORDER BY date ASC;", conn);
+                   ORDER BY (date < NOW()) NULLS LAST, date ASC NULLS LAST;", conn);
             cmd.Parameters.Add("n", NpgsqlDbType.Text).Value = (object?)nume ?? DBNull.Value;
             cmd.Parameters.Add("o", NpgsqlDbType.Text).Value = (object?)organizator ?? DBNull.Value;
             cmd.Parameters.Add("c", NpgsqlDbType.Text).Value = (object?)oras ?? DBNull.Value;

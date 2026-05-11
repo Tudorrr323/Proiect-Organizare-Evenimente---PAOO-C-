@@ -105,47 +105,155 @@ namespace Proiect_PAOO_Organizare_Evenimente
             //
             // btnHome
             //
-            ConfigSidebarButton(btnHome, "  Acasa", 130);
+            btnHome.BackColor = Color.FromArgb(33, 41, 73);
+            btnHome.FlatAppearance.BorderSize = 0;
+            btnHome.FlatAppearance.MouseOverBackColor = Color.FromArgb(58, 70, 115);
+            btnHome.FlatAppearance.MouseDownBackColor = Color.FromArgb(229, 57, 53);
+            btnHome.FlatStyle = FlatStyle.Flat;
+            btnHome.Font = new Font("Segoe UI", 11F);
+            btnHome.ForeColor = Color.White;
+            btnHome.Location = new Point(0, 130);
+            btnHome.Name = "btnHome";
+            btnHome.Size = new Size(220, 50);
+            btnHome.Text = "  Acasa";
+            btnHome.TextAlign = ContentAlignment.MiddleLeft;
+            btnHome.UseVisualStyleBackColor = false;
             btnHome.Click += btnHome_Click;
             //
             // btnDiscover
             //
-            ConfigSidebarButton(btnDiscover, "  Descopera evenimente", 180);
+            btnDiscover.BackColor = Color.FromArgb(33, 41, 73);
+            btnDiscover.FlatAppearance.BorderSize = 0;
+            btnDiscover.FlatAppearance.MouseOverBackColor = Color.FromArgb(58, 70, 115);
+            btnDiscover.FlatAppearance.MouseDownBackColor = Color.FromArgb(229, 57, 53);
+            btnDiscover.FlatStyle = FlatStyle.Flat;
+            btnDiscover.Font = new Font("Segoe UI", 11F);
+            btnDiscover.ForeColor = Color.White;
+            btnDiscover.Location = new Point(0, 180);
+            btnDiscover.Name = "btnDiscover";
+            btnDiscover.Size = new Size(220, 50);
+            btnDiscover.Text = "  Descopera evenimente";
+            btnDiscover.TextAlign = ContentAlignment.MiddleLeft;
+            btnDiscover.UseVisualStyleBackColor = false;
             btnDiscover.Click += btnDiscover_Click;
             //
             // btnMyTickets
             //
-            ConfigSidebarButton(btnMyTickets, "  Biletele mele", 230);
+            btnMyTickets.BackColor = Color.FromArgb(33, 41, 73);
+            btnMyTickets.FlatAppearance.BorderSize = 0;
+            btnMyTickets.FlatAppearance.MouseOverBackColor = Color.FromArgb(58, 70, 115);
+            btnMyTickets.FlatAppearance.MouseDownBackColor = Color.FromArgb(229, 57, 53);
+            btnMyTickets.FlatStyle = FlatStyle.Flat;
+            btnMyTickets.Font = new Font("Segoe UI", 11F);
+            btnMyTickets.ForeColor = Color.White;
+            btnMyTickets.Location = new Point(0, 230);
+            btnMyTickets.Name = "btnMyTickets";
+            btnMyTickets.Size = new Size(220, 50);
+            btnMyTickets.Text = "  Biletele mele";
+            btnMyTickets.TextAlign = ContentAlignment.MiddleLeft;
+            btnMyTickets.UseVisualStyleBackColor = false;
             btnMyTickets.Click += btnMyTickets_Click;
             //
             // btnCart
             //
-            ConfigSidebarButton(btnCart, "  Cosul meu", 280);
+            btnCart.BackColor = Color.FromArgb(33, 41, 73);
+            btnCart.FlatAppearance.BorderSize = 0;
+            btnCart.FlatAppearance.MouseOverBackColor = Color.FromArgb(58, 70, 115);
+            btnCart.FlatAppearance.MouseDownBackColor = Color.FromArgb(229, 57, 53);
+            btnCart.FlatStyle = FlatStyle.Flat;
+            btnCart.Font = new Font("Segoe UI", 11F);
+            btnCart.ForeColor = Color.White;
+            btnCart.Location = new Point(0, 280);
+            btnCart.Name = "btnCart";
+            btnCart.Size = new Size(220, 50);
+            btnCart.Text = "  Cosul meu";
+            btnCart.TextAlign = ContentAlignment.MiddleLeft;
+            btnCart.UseVisualStyleBackColor = false;
             btnCart.Click += btnCart_Click;
             //
             // btnVirtual
             //
-            ConfigSidebarButton(btnVirtual, "  Evenimente virtuale", 330);
+            btnVirtual.BackColor = Color.FromArgb(33, 41, 73);
+            btnVirtual.FlatAppearance.BorderSize = 0;
+            btnVirtual.FlatAppearance.MouseOverBackColor = Color.FromArgb(58, 70, 115);
+            btnVirtual.FlatAppearance.MouseDownBackColor = Color.FromArgb(229, 57, 53);
+            btnVirtual.FlatStyle = FlatStyle.Flat;
+            btnVirtual.Font = new Font("Segoe UI", 11F);
+            btnVirtual.ForeColor = Color.White;
+            btnVirtual.Location = new Point(0, 330);
+            btnVirtual.Name = "btnVirtual";
+            btnVirtual.Size = new Size(220, 50);
+            btnVirtual.Text = "  Evenimente virtuale";
+            btnVirtual.TextAlign = ContentAlignment.MiddleLeft;
+            btnVirtual.UseVisualStyleBackColor = false;
             btnVirtual.Click += btnVirtual_Click;
             //
             // btnCreateEvents
             //
-            ConfigSidebarButton(btnCreateEvents, "  Creeaza eveniment", 380);
+            btnCreateEvents.BackColor = Color.FromArgb(33, 41, 73);
+            btnCreateEvents.FlatAppearance.BorderSize = 0;
+            btnCreateEvents.FlatAppearance.MouseOverBackColor = Color.FromArgb(58, 70, 115);
+            btnCreateEvents.FlatAppearance.MouseDownBackColor = Color.FromArgb(229, 57, 53);
+            btnCreateEvents.FlatStyle = FlatStyle.Flat;
+            btnCreateEvents.Font = new Font("Segoe UI", 11F);
+            btnCreateEvents.ForeColor = Color.White;
+            btnCreateEvents.Location = new Point(0, 380);
+            btnCreateEvents.Name = "btnCreateEvents";
+            btnCreateEvents.Size = new Size(220, 50);
+            btnCreateEvents.Text = "  Creeaza eveniment";
+            btnCreateEvents.TextAlign = ContentAlignment.MiddleLeft;
+            btnCreateEvents.UseVisualStyleBackColor = false;
             btnCreateEvents.Click += btnCreateEvents_Click;
             //
             // btnMyEvents
             //
-            ConfigSidebarButton(btnMyEvents, "  Evenimentele mele", 430);
+            btnMyEvents.BackColor = Color.FromArgb(33, 41, 73);
+            btnMyEvents.FlatAppearance.BorderSize = 0;
+            btnMyEvents.FlatAppearance.MouseOverBackColor = Color.FromArgb(58, 70, 115);
+            btnMyEvents.FlatAppearance.MouseDownBackColor = Color.FromArgb(229, 57, 53);
+            btnMyEvents.FlatStyle = FlatStyle.Flat;
+            btnMyEvents.Font = new Font("Segoe UI", 11F);
+            btnMyEvents.ForeColor = Color.White;
+            btnMyEvents.Location = new Point(0, 430);
+            btnMyEvents.Name = "btnMyEvents";
+            btnMyEvents.Size = new Size(220, 50);
+            btnMyEvents.Text = "  Evenimentele mele";
+            btnMyEvents.TextAlign = ContentAlignment.MiddleLeft;
+            btnMyEvents.UseVisualStyleBackColor = false;
             btnMyEvents.Click += btnMyEvents_Click;
             //
             // btnAdmin (vizibil doar pentru rol admin)
             //
-            ConfigSidebarButton(btnAdmin, "  Admin Dashboard", 430);
+            btnAdmin.BackColor = Color.FromArgb(33, 41, 73);
+            btnAdmin.FlatAppearance.BorderSize = 0;
+            btnAdmin.FlatAppearance.MouseOverBackColor = Color.FromArgb(58, 70, 115);
+            btnAdmin.FlatAppearance.MouseDownBackColor = Color.FromArgb(229, 57, 53);
+            btnAdmin.FlatStyle = FlatStyle.Flat;
+            btnAdmin.Font = new Font("Segoe UI", 11F);
+            btnAdmin.ForeColor = Color.White;
+            btnAdmin.Location = new Point(0, 430);
+            btnAdmin.Name = "btnAdmin";
+            btnAdmin.Size = new Size(220, 50);
+            btnAdmin.Text = "  Admin Dashboard";
+            btnAdmin.TextAlign = ContentAlignment.MiddleLeft;
+            btnAdmin.UseVisualStyleBackColor = false;
             btnAdmin.Click += btnAdmin_Click;
             //
             // btnProfile
             //
-            ConfigSidebarButton(btnProfile, "  Profilul meu", 480);
+            btnProfile.BackColor = Color.FromArgb(33, 41, 73);
+            btnProfile.FlatAppearance.BorderSize = 0;
+            btnProfile.FlatAppearance.MouseOverBackColor = Color.FromArgb(58, 70, 115);
+            btnProfile.FlatAppearance.MouseDownBackColor = Color.FromArgb(229, 57, 53);
+            btnProfile.FlatStyle = FlatStyle.Flat;
+            btnProfile.Font = new Font("Segoe UI", 11F);
+            btnProfile.ForeColor = Color.White;
+            btnProfile.Location = new Point(0, 480);
+            btnProfile.Name = "btnProfile";
+            btnProfile.Size = new Size(220, 50);
+            btnProfile.Text = "  Profilul meu";
+            btnProfile.TextAlign = ContentAlignment.MiddleLeft;
+            btnProfile.UseVisualStyleBackColor = false;
             btnProfile.Click += btnProfile_Click;
             //
             // btnLogout
@@ -192,24 +300,6 @@ namespace Proiect_PAOO_Organizare_Evenimente
             ((System.ComponentModel.ISupportInitialize)picLogo).EndInit();
             panSidebar.ResumeLayout(false);
             ResumeLayout(false);
-        }
-
-        // Helper - configurare comuna pentru toate butoanele din sidebar
-        private void ConfigSidebarButton(Button b, string text, int top)
-        {
-            b.BackColor = Color.FromArgb(33, 41, 73);
-            b.FlatAppearance.BorderSize = 0;
-            b.FlatAppearance.MouseOverBackColor = Color.FromArgb(58, 70, 115); // un albastru mai deschis pentru contrast cu textul alb
-            b.FlatAppearance.MouseDownBackColor = Color.FromArgb(229, 57, 53); // rosu accent la apasare
-            b.FlatStyle = FlatStyle.Flat;
-            b.Font = new Font("Segoe UI", 11F);
-            b.ForeColor = Color.White;
-            b.Location = new Point(0, top);
-            b.Name = "btn" + text.Trim().Replace(" ", "");
-            b.Size = new Size(220, 50);
-            b.Text = text;
-            b.TextAlign = ContentAlignment.MiddleLeft;
-            b.UseVisualStyleBackColor = false;
         }
 
         #endregion

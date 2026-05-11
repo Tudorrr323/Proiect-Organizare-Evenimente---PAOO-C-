@@ -50,24 +50,64 @@ namespace Proiect_PAOO_Organizare_Evenimente
             lblTitlu.Size = new Size(460, 30);
             lblTitlu.Text = "Adauga categorie bilet";
             //
-            // Denumire
+            // lblDenumire
             //
-            ConfigLabel(lblDenumire, "Denumire *", 20, 60);
-            ConfigText(txtDenumire, 20, 85, 280);
+            lblDenumire.AutoSize = true;
+            lblDenumire.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblDenumire.Location = new Point(20, 60);
+            lblDenumire.Name = "lblDenumire";
+            lblDenumire.Text = "Denumire *";
             //
-            // Pret
+            // txtDenumire
             //
-            ConfigLabel(lblPret, "Pret RON *", 320, 60);
-            ConfigText(txtPret, 320, 85, 160);
+            txtDenumire.BorderStyle = BorderStyle.FixedSingle;
+            txtDenumire.Font = new Font("Segoe UI", 10F);
+            txtDenumire.Location = new Point(20, 85);
+            txtDenumire.Name = "txtDenumire";
+            txtDenumire.Size = new Size(280, 27);
             //
-            // Loc
+            // lblPret
             //
-            ConfigLabel(lblLoc, "Loc / Sectiune", 20, 125);
-            ConfigText(txtLoc, 20, 150, 460);
+            lblPret.AutoSize = true;
+            lblPret.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblPret.Location = new Point(320, 60);
+            lblPret.Name = "lblPret";
+            lblPret.Text = "Pret RON *";
             //
-            // Descriere
+            // txtPret
             //
-            ConfigLabel(lblDescriere, "Descriere", 20, 190);
+            txtPret.BorderStyle = BorderStyle.FixedSingle;
+            txtPret.Font = new Font("Segoe UI", 10F);
+            txtPret.Location = new Point(320, 85);
+            txtPret.Name = "txtPret";
+            txtPret.Size = new Size(160, 27);
+            //
+            // lblLoc
+            //
+            lblLoc.AutoSize = true;
+            lblLoc.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblLoc.Location = new Point(20, 125);
+            lblLoc.Name = "lblLoc";
+            lblLoc.Text = "Loc / Sectiune";
+            //
+            // txtLoc
+            //
+            txtLoc.BorderStyle = BorderStyle.FixedSingle;
+            txtLoc.Font = new Font("Segoe UI", 10F);
+            txtLoc.Location = new Point(20, 150);
+            txtLoc.Name = "txtLoc";
+            txtLoc.Size = new Size(460, 27);
+            //
+            // lblDescriere
+            //
+            lblDescriere.AutoSize = true;
+            lblDescriere.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblDescriere.Location = new Point(20, 190);
+            lblDescriere.Name = "lblDescriere";
+            lblDescriere.Text = "Descriere";
+            //
+            // txtDescriere
+            //
             txtDescriere.BorderStyle = BorderStyle.FixedSingle;
             txtDescriere.Font = new Font("Segoe UI", 10F);
             txtDescriere.Location = new Point(20, 215);
@@ -138,22 +178,6 @@ namespace Proiect_PAOO_Organizare_Evenimente
             Text = "Adauga categorie bilet";
             ResumeLayout(false);
             PerformLayout();
-        }
-
-        private static void ConfigLabel(Label l, string text, int x, int y)
-        {
-            l.AutoSize = true;
-            l.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
-            l.Location = new Point(x, y);
-            l.Text = text;
-        }
-
-        private static void ConfigText(TextBox t, int x, int y, int width)
-        {
-            t.BorderStyle = BorderStyle.FixedSingle;
-            t.Font = new Font("Segoe UI", 10F);
-            t.Location = new Point(x, y);
-            t.Size = new Size(width, 27);
         }
 
         #endregion

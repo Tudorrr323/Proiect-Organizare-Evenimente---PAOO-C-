@@ -48,7 +48,6 @@ namespace Proiect_PAOO_Organizare_Evenimente.UserControls
             lblTitlu = new Label();
             lblRol = new Label();
             panForm = new Panel();
-
             lblSectProfil = new Label();
             lblPrenume = new Label();
             txtPrenume = new TextBox();
@@ -65,7 +64,6 @@ namespace Proiect_PAOO_Organizare_Evenimente.UserControls
             dtpBday = new DateTimePicker();
             lblErrorProfile = new Label();
             btnSalveaza = new Button();
-
             lblSectParola = new Label();
             lblParolaVeche = new Label();
             txtParolaVeche = new TextBox();
@@ -75,17 +73,8 @@ namespace Proiect_PAOO_Organizare_Evenimente.UserControls
             txtParolaConfirma = new TextBox();
             lblErrorParola = new Label();
             btnSchimbaParola = new Button();
-
             panForm.SuspendLayout();
             SuspendLayout();
-
-            // Constants
-            const int FullW = 880;
-            const int HalfW = 432;
-            const int Col2X = 448;
-            const int ThirdW = 286;
-            const int Col2X3 = 297;
-            const int Col3X3 = 594;
             //
             // lblTitlu
             //
@@ -107,57 +96,138 @@ namespace Proiect_PAOO_Organizare_Evenimente.UserControls
             //
             // panForm
             //
+            panForm.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panForm.AutoScroll = true;
             panForm.BackColor = Color.Transparent;
             panForm.Location = new Point(30, 100);
             panForm.Name = "panForm";
             panForm.Size = new Size(900, 555);
-            panForm.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-
-            // ----- Date personale -----
-            ConfigSection(lblSectProfil, "Date personale", 0, 0);
-
-            // Rand 1: Prenume + Nume
-            ConfigLabel(lblPrenume, "Prenume *", 0, 40);
-            ConfigText(txtPrenume, 0, 65, HalfW);
-
-            ConfigLabel(lblNume, "Nume", Col2X, 40);
-            ConfigText(txtNume, Col2X, 65, HalfW);
-
-            // Rand 2: Email + Companie (sau Email full daca nu e manager - controlat din .cs)
-            ConfigLabel(lblEmail, "Email *", 0, 105);
-            ConfigText(txtEmail, 0, 130, HalfW);
-
-            ConfigLabel(lblCompanie, "Companie", Col2X, 105);
-            ConfigText(txtCompanie, Col2X, 130, HalfW);
-
-            // Rand 3: Telefon + Data nasterii
-            ConfigLabel(lblTelefon, "Telefon", 0, 170);
-            ConfigText(txtTelefon, 0, 195, HalfW);
-
-            ConfigLabel(lblBday, "Data nasterii", Col2X, 170);
+            //
+            // lblSectProfil
+            //
+            lblSectProfil.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
+            lblSectProfil.ForeColor = Color.FromArgb(33, 41, 73);
+            lblSectProfil.Location = new Point(0, 0);
+            lblSectProfil.Name = "lblSectProfil";
+            lblSectProfil.Size = new Size(880, 28);
+            lblSectProfil.Text = "Date personale";
+            //
+            // lblPrenume
+            //
+            lblPrenume.AutoSize = true;
+            lblPrenume.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblPrenume.Location = new Point(0, 40);
+            lblPrenume.Name = "lblPrenume";
+            lblPrenume.Text = "Prenume *";
+            //
+            // txtPrenume
+            //
+            txtPrenume.BorderStyle = BorderStyle.FixedSingle;
+            txtPrenume.Font = new Font("Segoe UI", 10F);
+            txtPrenume.Location = new Point(0, 65);
+            txtPrenume.Name = "txtPrenume";
+            txtPrenume.Size = new Size(432, 27);
+            //
+            // lblNume
+            //
+            lblNume.AutoSize = true;
+            lblNume.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblNume.Location = new Point(448, 40);
+            lblNume.Name = "lblNume";
+            lblNume.Text = "Nume";
+            //
+            // txtNume
+            //
+            txtNume.BorderStyle = BorderStyle.FixedSingle;
+            txtNume.Font = new Font("Segoe UI", 10F);
+            txtNume.Location = new Point(448, 65);
+            txtNume.Name = "txtNume";
+            txtNume.Size = new Size(432, 27);
+            //
+            // lblEmail
+            //
+            lblEmail.AutoSize = true;
+            lblEmail.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblEmail.Location = new Point(0, 105);
+            lblEmail.Name = "lblEmail";
+            lblEmail.Text = "Email *";
+            //
+            // txtEmail
+            //
+            txtEmail.BorderStyle = BorderStyle.FixedSingle;
+            txtEmail.Font = new Font("Segoe UI", 10F);
+            txtEmail.Location = new Point(0, 130);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(432, 27);
+            //
+            // lblCompanie
+            //
+            lblCompanie.AutoSize = true;
+            lblCompanie.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblCompanie.Location = new Point(448, 105);
+            lblCompanie.Name = "lblCompanie";
+            lblCompanie.Text = "Companie";
+            //
+            // txtCompanie
+            //
+            txtCompanie.BorderStyle = BorderStyle.FixedSingle;
+            txtCompanie.Font = new Font("Segoe UI", 10F);
+            txtCompanie.Location = new Point(448, 130);
+            txtCompanie.Name = "txtCompanie";
+            txtCompanie.Size = new Size(432, 27);
+            //
+            // lblTelefon
+            //
+            lblTelefon.AutoSize = true;
+            lblTelefon.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblTelefon.Location = new Point(0, 170);
+            lblTelefon.Name = "lblTelefon";
+            lblTelefon.Text = "Telefon";
+            //
+            // txtTelefon
+            //
+            txtTelefon.BorderStyle = BorderStyle.FixedSingle;
+            txtTelefon.Font = new Font("Segoe UI", 10F);
+            txtTelefon.Location = new Point(0, 195);
+            txtTelefon.Name = "txtTelefon";
+            txtTelefon.Size = new Size(432, 27);
+            //
+            // lblBday
+            //
+            lblBday.AutoSize = true;
+            lblBday.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblBday.Location = new Point(448, 170);
+            lblBday.Name = "lblBday";
+            lblBday.Text = "Data nasterii";
+            //
+            // chkAreBday
+            //
             chkAreBday.AutoSize = true;
             chkAreBday.Font = new Font("Segoe UI", 9.5F);
-            chkAreBday.Location = new Point(Col2X, 198);
+            chkAreBday.Location = new Point(448, 198);
             chkAreBday.Name = "chkAreBday";
             chkAreBday.Text = "Setata";
             chkAreBday.CheckedChanged += chkAreBday_CheckedChanged;
-
-            dtpBday.Format = DateTimePickerFormat.Short;
+            //
+            // dtpBday
+            //
             dtpBday.Font = new Font("Segoe UI", 10F);
-            dtpBday.Location = new Point(Col2X + 90, 195);
+            dtpBday.Format = DateTimePickerFormat.Short;
+            dtpBday.Location = new Point(538, 195);
             dtpBday.Name = "dtpBday";
-            dtpBday.Size = new Size(HalfW - 90, 27);
-
-            // Error
+            dtpBday.Size = new Size(342, 27);
+            //
+            // lblErrorProfile
+            //
             lblErrorProfile.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
             lblErrorProfile.ForeColor = Color.FromArgb(229, 57, 53);
             lblErrorProfile.Location = new Point(0, 240);
             lblErrorProfile.Name = "lblErrorProfile";
-            lblErrorProfile.Size = new Size(FullW, 22);
+            lblErrorProfile.Size = new Size(880, 22);
             lblErrorProfile.Visible = false;
-
-            // Buton SALVEAZA full width
+            //
+            // btnSalveaza
+            //
             btnSalveaza.BackColor = Color.FromArgb(229, 57, 53);
             btnSalveaza.FlatAppearance.BorderSize = 0;
             btnSalveaza.FlatStyle = FlatStyle.Flat;
@@ -165,34 +235,82 @@ namespace Proiect_PAOO_Organizare_Evenimente.UserControls
             btnSalveaza.ForeColor = Color.White;
             btnSalveaza.Location = new Point(0, 270);
             btnSalveaza.Name = "btnSalveaza";
-            btnSalveaza.Size = new Size(FullW, 45);
+            btnSalveaza.Size = new Size(880, 45);
             btnSalveaza.Text = "SALVEAZA MODIFICARILE";
             btnSalveaza.UseVisualStyleBackColor = false;
             btnSalveaza.Click += btnSalveaza_Click;
-
-            // ----- Schimba parola -----
-            ConfigSection(lblSectParola, "Schimba parola", 0, 345);
-
-            // Toate 3 pe acelasi rand
-            ConfigLabel(lblParolaVeche, "Parola veche *", 0, 385);
-            ConfigText(txtParolaVeche, 0, 410, ThirdW);
+            //
+            // lblSectParola
+            //
+            lblSectParola.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
+            lblSectParola.ForeColor = Color.FromArgb(33, 41, 73);
+            lblSectParola.Location = new Point(0, 345);
+            lblSectParola.Name = "lblSectParola";
+            lblSectParola.Size = new Size(880, 28);
+            lblSectParola.Text = "Schimba parola";
+            //
+            // lblParolaVeche
+            //
+            lblParolaVeche.AutoSize = true;
+            lblParolaVeche.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblParolaVeche.Location = new Point(0, 385);
+            lblParolaVeche.Name = "lblParolaVeche";
+            lblParolaVeche.Text = "Parola veche *";
+            //
+            // txtParolaVeche
+            //
+            txtParolaVeche.BorderStyle = BorderStyle.FixedSingle;
+            txtParolaVeche.Font = new Font("Segoe UI", 10F);
+            txtParolaVeche.Location = new Point(0, 410);
+            txtParolaVeche.Name = "txtParolaVeche";
             txtParolaVeche.PasswordChar = '*';
-
-            ConfigLabel(lblParolaNoua, "Parola noua *", Col2X3, 385);
-            ConfigText(txtParolaNoua, Col2X3, 410, ThirdW);
+            txtParolaVeche.Size = new Size(286, 27);
+            //
+            // lblParolaNoua
+            //
+            lblParolaNoua.AutoSize = true;
+            lblParolaNoua.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblParolaNoua.Location = new Point(297, 385);
+            lblParolaNoua.Name = "lblParolaNoua";
+            lblParolaNoua.Text = "Parola noua *";
+            //
+            // txtParolaNoua
+            //
+            txtParolaNoua.BorderStyle = BorderStyle.FixedSingle;
+            txtParolaNoua.Font = new Font("Segoe UI", 10F);
+            txtParolaNoua.Location = new Point(297, 410);
+            txtParolaNoua.Name = "txtParolaNoua";
             txtParolaNoua.PasswordChar = '*';
-
-            ConfigLabel(lblParolaConfirma, "Confirma parola noua *", Col3X3, 385);
-            ConfigText(txtParolaConfirma, Col3X3, 410, ThirdW);
+            txtParolaNoua.Size = new Size(286, 27);
+            //
+            // lblParolaConfirma
+            //
+            lblParolaConfirma.AutoSize = true;
+            lblParolaConfirma.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblParolaConfirma.Location = new Point(594, 385);
+            lblParolaConfirma.Name = "lblParolaConfirma";
+            lblParolaConfirma.Text = "Confirma parola noua *";
+            //
+            // txtParolaConfirma
+            //
+            txtParolaConfirma.BorderStyle = BorderStyle.FixedSingle;
+            txtParolaConfirma.Font = new Font("Segoe UI", 10F);
+            txtParolaConfirma.Location = new Point(594, 410);
+            txtParolaConfirma.Name = "txtParolaConfirma";
             txtParolaConfirma.PasswordChar = '*';
-
+            txtParolaConfirma.Size = new Size(286, 27);
+            //
+            // lblErrorParola
+            //
             lblErrorParola.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
             lblErrorParola.ForeColor = Color.FromArgb(229, 57, 53);
             lblErrorParola.Location = new Point(0, 450);
             lblErrorParola.Name = "lblErrorParola";
-            lblErrorParola.Size = new Size(FullW, 22);
+            lblErrorParola.Size = new Size(880, 22);
             lblErrorParola.Visible = false;
-
+            //
+            // btnSchimbaParola
+            //
             btnSchimbaParola.BackColor = Color.FromArgb(49, 112, 249);
             btnSchimbaParola.FlatAppearance.BorderSize = 0;
             btnSchimbaParola.FlatStyle = FlatStyle.Flat;
@@ -200,12 +318,13 @@ namespace Proiect_PAOO_Organizare_Evenimente.UserControls
             btnSchimbaParola.ForeColor = Color.White;
             btnSchimbaParola.Location = new Point(0, 480);
             btnSchimbaParola.Name = "btnSchimbaParola";
-            btnSchimbaParola.Size = new Size(FullW, 45);
+            btnSchimbaParola.Size = new Size(880, 45);
             btnSchimbaParola.Text = "SCHIMBA PAROLA";
             btnSchimbaParola.UseVisualStyleBackColor = false;
             btnSchimbaParola.Click += btnSchimbaParola_Click;
-
-            // Add la panForm
+            //
+            // panForm controls
+            //
             panForm.Controls.Add(btnSchimbaParola);
             panForm.Controls.Add(lblErrorParola);
             panForm.Controls.Add(txtParolaConfirma);
@@ -215,7 +334,6 @@ namespace Proiect_PAOO_Organizare_Evenimente.UserControls
             panForm.Controls.Add(txtParolaVeche);
             panForm.Controls.Add(lblParolaVeche);
             panForm.Controls.Add(lblSectParola);
-
             panForm.Controls.Add(btnSalveaza);
             panForm.Controls.Add(lblErrorProfile);
             panForm.Controls.Add(dtpBday);
@@ -232,7 +350,6 @@ namespace Proiect_PAOO_Organizare_Evenimente.UserControls
             panForm.Controls.Add(txtPrenume);
             panForm.Controls.Add(lblPrenume);
             panForm.Controls.Add(lblSectProfil);
-
             //
             // UCProfile
             //
@@ -248,31 +365,6 @@ namespace Proiect_PAOO_Organizare_Evenimente.UserControls
             panForm.ResumeLayout(false);
             panForm.PerformLayout();
             ResumeLayout(false);
-        }
-
-        private static void ConfigSection(Label l, string text, int x, int y)
-        {
-            l.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            l.ForeColor = Color.FromArgb(33, 41, 73);
-            l.Location = new Point(x, y);
-            l.Size = new Size(880, 28);
-            l.Text = text;
-        }
-
-        private static void ConfigLabel(Label l, string text, int x, int y)
-        {
-            l.AutoSize = true;
-            l.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
-            l.Location = new Point(x, y);
-            l.Text = text;
-        }
-
-        private static void ConfigText(TextBox t, int x, int y, int width)
-        {
-            t.BorderStyle = BorderStyle.FixedSingle;
-            t.Font = new Font("Segoe UI", 10F);
-            t.Location = new Point(x, y);
-            t.Size = new Size(width, 27);
         }
 
         #endregion

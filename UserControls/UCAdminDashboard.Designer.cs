@@ -36,6 +36,10 @@ namespace Proiect_PAOO_Organizare_Evenimente.UserControls
 
         // Tab Statistici (TableLayoutPanel 2x2)
         private TableLayoutPanel tlpStatistici;
+        private Panel panCellTip;
+        private Panel panCellRol;
+        private Panel panCellTopBilete;
+        private Panel panCellVenit;
         private Panel panChartTip;
         private Panel panChartRol;
         private Panel panChartTopBilete;
@@ -84,6 +88,10 @@ namespace Proiect_PAOO_Organizare_Evenimente.UserControls
             btnEditeazaEv = new Button();
 
             tlpStatistici = new TableLayoutPanel();
+            panCellTip = new Panel();
+            panCellRol = new Panel();
+            panCellTopBilete = new Panel();
+            panCellVenit = new Panel();
             panChartTip = new Panel();
             panChartRol = new Panel();
             panChartTopBilete = new Panel();
@@ -346,24 +354,91 @@ namespace Proiect_PAOO_Organizare_Evenimente.UserControls
             tlpStatistici.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tlpStatistici.BackColor = Color.White;
 
+            //
             // Cell (0,0): Evenimente pe tip
-            var cellTip = MakeChartCell(lblChartTip, "Evenimente pe tip", panChartTip);
-            // Cell (0,1): Utilizatori pe rol
-            var cellRol = MakeChartCell(lblChartRol, "Utilizatori pe rol", panChartRol);
-            // Cell (1,0): Top 5 evenimente
-            var cellTop = MakeChartCell(lblChartTopBilete, "Top 5 evenimente dupa bilete vandute", panChartTopBilete);
-            // Cell (1,1): Venit pe luna
-            var cellVenit = MakeChartCell(lblChartVenit, "Venit pe luna (ultimele 6 luni)", panChartVenit);
-
+            //
+            panCellTip.BackColor = Color.White;
+            panCellTip.Dock = DockStyle.Fill;
+            panCellTip.Margin = new Padding(5);
+            panCellTip.Name = "panCellTip";
+            lblChartTip.Dock = DockStyle.Top;
+            lblChartTip.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            lblChartTip.ForeColor = Color.FromArgb(33, 41, 73);
+            lblChartTip.Height = 24;
+            lblChartTip.Name = "lblChartTip";
+            lblChartTip.Text = "Evenimente pe tip";
+            panChartTip.BackColor = Color.White;
+            panChartTip.BorderStyle = BorderStyle.FixedSingle;
+            panChartTip.Dock = DockStyle.Fill;
+            panChartTip.Name = "panChartTip";
             panChartTip.Paint += panChartTip_Paint;
+            panCellTip.Controls.Add(panChartTip);
+            panCellTip.Controls.Add(lblChartTip);
+            //
+            // Cell (0,1): Utilizatori pe rol
+            //
+            panCellRol.BackColor = Color.White;
+            panCellRol.Dock = DockStyle.Fill;
+            panCellRol.Margin = new Padding(5);
+            panCellRol.Name = "panCellRol";
+            lblChartRol.Dock = DockStyle.Top;
+            lblChartRol.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            lblChartRol.ForeColor = Color.FromArgb(33, 41, 73);
+            lblChartRol.Height = 24;
+            lblChartRol.Name = "lblChartRol";
+            lblChartRol.Text = "Utilizatori pe rol";
+            panChartRol.BackColor = Color.White;
+            panChartRol.BorderStyle = BorderStyle.FixedSingle;
+            panChartRol.Dock = DockStyle.Fill;
+            panChartRol.Name = "panChartRol";
             panChartRol.Paint += panChartRol_Paint;
+            panCellRol.Controls.Add(panChartRol);
+            panCellRol.Controls.Add(lblChartRol);
+            //
+            // Cell (1,0): Top 5 evenimente
+            //
+            panCellTopBilete.BackColor = Color.White;
+            panCellTopBilete.Dock = DockStyle.Fill;
+            panCellTopBilete.Margin = new Padding(5);
+            panCellTopBilete.Name = "panCellTopBilete";
+            lblChartTopBilete.Dock = DockStyle.Top;
+            lblChartTopBilete.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            lblChartTopBilete.ForeColor = Color.FromArgb(33, 41, 73);
+            lblChartTopBilete.Height = 24;
+            lblChartTopBilete.Name = "lblChartTopBilete";
+            lblChartTopBilete.Text = "Top 5 evenimente dupa bilete vandute";
+            panChartTopBilete.BackColor = Color.White;
+            panChartTopBilete.BorderStyle = BorderStyle.FixedSingle;
+            panChartTopBilete.Dock = DockStyle.Fill;
+            panChartTopBilete.Name = "panChartTopBilete";
             panChartTopBilete.Paint += panChartTopBilete_Paint;
+            panCellTopBilete.Controls.Add(panChartTopBilete);
+            panCellTopBilete.Controls.Add(lblChartTopBilete);
+            //
+            // Cell (1,1): Venit pe luna
+            //
+            panCellVenit.BackColor = Color.White;
+            panCellVenit.Dock = DockStyle.Fill;
+            panCellVenit.Margin = new Padding(5);
+            panCellVenit.Name = "panCellVenit";
+            lblChartVenit.Dock = DockStyle.Top;
+            lblChartVenit.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            lblChartVenit.ForeColor = Color.FromArgb(33, 41, 73);
+            lblChartVenit.Height = 24;
+            lblChartVenit.Name = "lblChartVenit";
+            lblChartVenit.Text = "Venit pe luna (ultimele 6 luni)";
+            panChartVenit.BackColor = Color.White;
+            panChartVenit.BorderStyle = BorderStyle.FixedSingle;
+            panChartVenit.Dock = DockStyle.Fill;
+            panChartVenit.Name = "panChartVenit";
             panChartVenit.Paint += panChartVenit_Paint;
+            panCellVenit.Controls.Add(panChartVenit);
+            panCellVenit.Controls.Add(lblChartVenit);
 
-            tlpStatistici.Controls.Add(cellTip,   0, 0);
-            tlpStatistici.Controls.Add(cellRol,   1, 0);
-            tlpStatistici.Controls.Add(cellTop,   0, 1);
-            tlpStatistici.Controls.Add(cellVenit, 1, 1);
+            tlpStatistici.Controls.Add(panCellTip,       0, 0);
+            tlpStatistici.Controls.Add(panCellRol,       1, 0);
+            tlpStatistici.Controls.Add(panCellTopBilete, 0, 1);
+            tlpStatistici.Controls.Add(panCellVenit,     1, 1);
 
             tabStatistici.Controls.Add(tlpStatistici);
 
@@ -381,31 +456,6 @@ namespace Proiect_PAOO_Organizare_Evenimente.UserControls
             Size = new Size(960, 680);
             Load += UCAdminDashboard_Load;
             ResumeLayout(false);
-        }
-
-        // Helper - construieste o celula pentru TableLayoutPanel cu titlu + chart panel
-        private static Panel MakeChartCell(Label label, string title, Panel chartPanel)
-        {
-            var cell = new Panel
-            {
-                Dock = DockStyle.Fill,
-                Margin = new Padding(5),
-                BackColor = Color.White
-            };
-
-            label.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            label.ForeColor = Color.FromArgb(33, 41, 73);
-            label.Dock = DockStyle.Top;
-            label.Height = 24;
-            label.Text = title;
-
-            chartPanel.Dock = DockStyle.Fill;
-            chartPanel.BorderStyle = BorderStyle.FixedSingle;
-            chartPanel.BackColor = Color.White;
-
-            cell.Controls.Add(chartPanel);
-            cell.Controls.Add(label);
-            return cell;
         }
 
         #endregion

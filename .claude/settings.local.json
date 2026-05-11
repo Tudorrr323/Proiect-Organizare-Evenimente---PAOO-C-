@@ -27,7 +27,13 @@
       "WebFetch(domain:www.blackhat.com)",
       "mcp__chrome-devtools__navigate_page",
       "Bash(python3 *)",
-      "Bash(awk '{print $NF, \"\\(\" $5, \"bytes\\)\"}')"
+      "Bash(awk '{print $NF, \"\\(\" $5, \"bytes\\)\"}')",
+      "PowerShell(Get-Process *)",
+      "Bash(xxd)",
+      "Bash(grep -n '\"[^\"]\\\\{15,\\\\}\"' 'D:\\\\Programs\\\\C#\\\\Proiect_PAOO_Organizare_Evenimente\\\\Form1.cs')",
+      "Bash(grep -n '\"[^\"]\\\\{15,\\\\}\"' 'D:\\\\Programs\\\\C#\\\\Proiect_PAOO_Organizare_Evenimente\\\\BLL\\\\AuthService.cs')",
+      "Bash(grep -n '\"[^\"]\\\\{10,\\\\}\"' 'D:\\\\Programs\\\\C#\\\\Proiect_PAOO_Organizare_Evenimente\\\\Forms\\\\MainMenu.cs')",
+      "Bash(python *)"
     ]
   }
 }

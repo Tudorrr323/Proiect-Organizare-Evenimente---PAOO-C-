@@ -108,7 +108,6 @@ namespace Proiect_PAOO_Organizare_Evenimente.UserControls
             panForm.SuspendLayout();
             panFooter.SuspendLayout();
             SuspendLayout();
-
             //
             // lblTitlu
             //
@@ -118,9 +117,8 @@ namespace Proiect_PAOO_Organizare_Evenimente.UserControls
             lblTitlu.Name = "lblTitlu";
             lblTitlu.Size = new Size(900, 40);
             lblTitlu.Text = "Creeaza eveniment nou";
-
             //
-            // panForm (zona scrollabila pentru toate campurile)
+            // panForm
             //
             panForm.AutoScroll = true;
             panForm.BackColor = Color.Transparent;
@@ -128,62 +126,180 @@ namespace Proiect_PAOO_Organizare_Evenimente.UserControls
             panForm.Name = "panForm";
             panForm.Size = new Size(900, 530);
             panForm.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-
-            // ----- Sectiune Detalii Eveniment -----
-            ConfigSection(lblSectEv, "Detalii eveniment", 0, 0);
-
-            // Stanga
-            ConfigLabel(lblNume, "Nume *", 0, 40);
-            ConfigText(txtNume, 0, 65, 420);
-
-            ConfigLabel(lblOrganizator, "Organizator *", 0, 100);
-            ConfigText(txtOrganizator, 0, 125, 420);
-
-            ConfigLabel(lblOras, "Oras *", 0, 160);
+            //
+            // lblSectEv
+            //
+            lblSectEv.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
+            lblSectEv.ForeColor = Color.FromArgb(33, 41, 73);
+            lblSectEv.Location = new Point(0, 0);
+            lblSectEv.Name = "lblSectEv";
+            lblSectEv.Size = new Size(680, 28);
+            lblSectEv.Text = "Detalii eveniment";
+            //
+            // lblNume
+            //
+            lblNume.AutoSize = true;
+            lblNume.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblNume.Location = new Point(0, 40);
+            lblNume.Name = "lblNume";
+            lblNume.Text = "Nume *";
+            //
+            // txtNume
+            //
+            txtNume.BorderStyle = BorderStyle.FixedSingle;
+            txtNume.Font = new Font("Segoe UI", 10F);
+            txtNume.Location = new Point(0, 65);
+            txtNume.Name = "txtNume";
+            txtNume.Size = new Size(420, 27);
+            //
+            // lblOrganizator
+            //
+            lblOrganizator.AutoSize = true;
+            lblOrganizator.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblOrganizator.Location = new Point(0, 100);
+            lblOrganizator.Name = "lblOrganizator";
+            lblOrganizator.Text = "Organizator *";
+            //
+            // txtOrganizator
+            //
+            txtOrganizator.BorderStyle = BorderStyle.FixedSingle;
+            txtOrganizator.Font = new Font("Segoe UI", 10F);
+            txtOrganizator.Location = new Point(0, 125);
+            txtOrganizator.Name = "txtOrganizator";
+            txtOrganizator.Size = new Size(420, 27);
+            //
+            // lblOras
+            //
+            lblOras.AutoSize = true;
+            lblOras.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblOras.Location = new Point(0, 160);
+            lblOras.Name = "lblOras";
+            lblOras.Text = "Oras *";
+            //
+            // cboOras
+            //
             cboOras.DropDownStyle = ComboBoxStyle.DropDownList;
             cboOras.Font = new Font("Segoe UI", 10F);
             cboOras.Location = new Point(0, 185);
             cboOras.Name = "cboOras";
             cboOras.Size = new Size(420, 27);
-
-            ConfigLabel(lblLocatie, "Locatie / Adresa *", 0, 220);
-            ConfigText(txtLocatie, 0, 245, 420);
-
-            ConfigLabel(lblData, "Data *", 0, 280);
-            dtpData.Format = DateTimePickerFormat.Short;
+            //
+            // lblLocatie
+            //
+            lblLocatie.AutoSize = true;
+            lblLocatie.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblLocatie.Location = new Point(0, 220);
+            lblLocatie.Name = "lblLocatie";
+            lblLocatie.Text = "Locatie / Adresa *";
+            //
+            // txtLocatie
+            //
+            txtLocatie.BorderStyle = BorderStyle.FixedSingle;
+            txtLocatie.Font = new Font("Segoe UI", 10F);
+            txtLocatie.Location = new Point(0, 245);
+            txtLocatie.Name = "txtLocatie";
+            txtLocatie.Size = new Size(420, 27);
+            //
+            // lblData
+            //
+            lblData.AutoSize = true;
+            lblData.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblData.Location = new Point(0, 280);
+            lblData.Name = "lblData";
+            lblData.Text = "Data *";
+            //
+            // dtpData
+            //
             dtpData.Font = new Font("Segoe UI", 10F);
+            dtpData.Format = DateTimePickerFormat.Short;
             dtpData.Location = new Point(0, 305);
             dtpData.Name = "dtpData";
             dtpData.Size = new Size(200, 27);
-
-            ConfigLabel(lblOra, "Ora *", 220, 280);
+            //
+            // lblOra
+            //
+            lblOra.AutoSize = true;
+            lblOra.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblOra.Location = new Point(220, 280);
+            lblOra.Name = "lblOra";
+            lblOra.Text = "Ora *";
+            //
+            // dtpOra
+            //
             dtpOra.Font = new Font("Segoe UI", 10F);
             dtpOra.Location = new Point(220, 305);
             dtpOra.Name = "dtpOra";
             dtpOra.Size = new Size(200, 27);
-
-            ConfigLabel(lblDescriere, "Descriere *", 0, 340);
-            ConfigMultiline(txtDescriere, 0, 365, 420, 90);
-
-            // Dreapta (incepe la x=460)
-            ConfigLabel(lblTip, "Tip *", 460, 40);
+            //
+            // lblDescriere
+            //
+            lblDescriere.AutoSize = true;
+            lblDescriere.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblDescriere.Location = new Point(0, 340);
+            lblDescriere.Name = "lblDescriere";
+            lblDescriere.Text = "Descriere *";
+            //
+            // txtDescriere
+            //
+            txtDescriere.BorderStyle = BorderStyle.FixedSingle;
+            txtDescriere.Font = new Font("Segoe UI", 10F);
+            txtDescriere.Location = new Point(0, 365);
+            txtDescriere.Multiline = true;
+            txtDescriere.Name = "txtDescriere";
+            txtDescriere.ScrollBars = ScrollBars.Vertical;
+            txtDescriere.Size = new Size(420, 90);
+            //
+            // lblTip
+            //
+            lblTip.AutoSize = true;
+            lblTip.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblTip.Location = new Point(460, 40);
+            lblTip.Name = "lblTip";
+            lblTip.Text = "Tip *";
+            //
+            // rdoFizic
+            //
             rdoFizic.AutoSize = true;
             rdoFizic.Font = new Font("Segoe UI", 10F);
             rdoFizic.Location = new Point(460, 65);
             rdoFizic.Name = "rdoFizic";
             rdoFizic.Text = "Fizic";
-
+            //
+            // rdoVirtual
+            //
             rdoVirtual.AutoSize = true;
             rdoVirtual.Font = new Font("Segoe UI", 10F);
             rdoVirtual.Location = new Point(550, 65);
             rdoVirtual.Name = "rdoVirtual";
             rdoVirtual.Text = "Virtual";
-
-            ConfigLabel(lblStoc, "Stoc bilete *", 460, 100);
-            ConfigText(txtStoc, 460, 125, 200);
+            //
+            // lblStoc
+            //
+            lblStoc.AutoSize = true;
+            lblStoc.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblStoc.Location = new Point(460, 100);
+            lblStoc.Name = "lblStoc";
+            lblStoc.Text = "Stoc bilete *";
+            //
+            // txtStoc
+            //
+            txtStoc.BorderStyle = BorderStyle.FixedSingle;
+            txtStoc.Font = new Font("Segoe UI", 10F);
+            txtStoc.Location = new Point(460, 125);
+            txtStoc.Name = "txtStoc";
+            txtStoc.Size = new Size(200, 27);
             txtStoc.Text = "100";
-
-            ConfigLabel(lblImagine, "Imagine poster", 460, 160);
+            //
+            // lblImagine
+            //
+            lblImagine.AutoSize = true;
+            lblImagine.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblImagine.Location = new Point(460, 160);
+            lblImagine.Name = "lblImagine";
+            lblImagine.Text = "Imagine poster";
+            //
+            // btnAlegeImagine
+            //
             btnAlegeImagine.FlatAppearance.BorderColor = Color.FromArgb(49, 112, 249);
             btnAlegeImagine.FlatStyle = FlatStyle.Flat;
             btnAlegeImagine.Font = new Font("Segoe UI", 9.5F);
@@ -194,7 +310,9 @@ namespace Proiect_PAOO_Organizare_Evenimente.UserControls
             btnAlegeImagine.Text = "Selecteaza imagine...";
             btnAlegeImagine.UseVisualStyleBackColor = true;
             btnAlegeImagine.Click += btnAlegeImagine_Click;
-
+            //
+            // lblImagineNume
+            //
             lblImagineNume.AutoEllipsis = true;
             lblImagineNume.Font = new Font("Segoe UI", 9F);
             lblImagineNume.ForeColor = Color.Gray;
@@ -202,32 +320,94 @@ namespace Proiect_PAOO_Organizare_Evenimente.UserControls
             lblImagineNume.Name = "lblImagineNume";
             lblImagineNume.Size = new Size(220, 22);
             lblImagineNume.Text = "Nicio imagine aleasa";
-
-            picPreview.BorderStyle = BorderStyle.FixedSingle;
+            //
+            // picPreview
+            //
             picPreview.BackColor = Color.WhiteSmoke;
+            picPreview.BorderStyle = BorderStyle.FixedSingle;
             picPreview.Location = new Point(460, 230);
             picPreview.Name = "picPreview";
             picPreview.Size = new Size(390, 225);
             picPreview.SizeMode = PictureBoxSizeMode.Zoom;
-
+            picPreview.TabStop = false;
             //
-            // ----- Sectiune Bilet primar -----
+            // lblSectBilet
             //
-            ConfigSection(lblSectBilet, "Categorie bilet (cel putin una)", 0, 480);
-
-            ConfigLabel(lblBiletDenumire, "Denumire *", 0, 520);
-            ConfigText(txtBiletDenumire, 0, 545, 280);
-
-            ConfigLabel(lblBiletPret, "Pret (RON) *", 300, 520);
-            ConfigText(txtBiletPret, 300, 545, 130);
-
-            ConfigLabel(lblBiletLoc, "Loc / Sectiune", 460, 520);
-            ConfigText(txtBiletLoc, 460, 545, 390);
-
-            ConfigLabel(lblBiletDescriere, "Descriere bilet", 0, 580);
-            ConfigMultiline(txtBiletDescriere, 0, 605, 850, 90);
-
-            // Add controls la panForm (in ordine inversa pentru z-order)
+            lblSectBilet.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
+            lblSectBilet.ForeColor = Color.FromArgb(33, 41, 73);
+            lblSectBilet.Location = new Point(0, 480);
+            lblSectBilet.Name = "lblSectBilet";
+            lblSectBilet.Size = new Size(680, 28);
+            lblSectBilet.Text = "Categorie bilet (cel putin una)";
+            //
+            // lblBiletDenumire
+            //
+            lblBiletDenumire.AutoSize = true;
+            lblBiletDenumire.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblBiletDenumire.Location = new Point(0, 520);
+            lblBiletDenumire.Name = "lblBiletDenumire";
+            lblBiletDenumire.Text = "Denumire *";
+            //
+            // txtBiletDenumire
+            //
+            txtBiletDenumire.BorderStyle = BorderStyle.FixedSingle;
+            txtBiletDenumire.Font = new Font("Segoe UI", 10F);
+            txtBiletDenumire.Location = new Point(0, 545);
+            txtBiletDenumire.Name = "txtBiletDenumire";
+            txtBiletDenumire.Size = new Size(280, 27);
+            //
+            // lblBiletPret
+            //
+            lblBiletPret.AutoSize = true;
+            lblBiletPret.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblBiletPret.Location = new Point(300, 520);
+            lblBiletPret.Name = "lblBiletPret";
+            lblBiletPret.Text = "Pret (RON) *";
+            //
+            // txtBiletPret
+            //
+            txtBiletPret.BorderStyle = BorderStyle.FixedSingle;
+            txtBiletPret.Font = new Font("Segoe UI", 10F);
+            txtBiletPret.Location = new Point(300, 545);
+            txtBiletPret.Name = "txtBiletPret";
+            txtBiletPret.Size = new Size(130, 27);
+            //
+            // lblBiletLoc
+            //
+            lblBiletLoc.AutoSize = true;
+            lblBiletLoc.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblBiletLoc.Location = new Point(460, 520);
+            lblBiletLoc.Name = "lblBiletLoc";
+            lblBiletLoc.Text = "Loc / Sectiune";
+            //
+            // txtBiletLoc
+            //
+            txtBiletLoc.BorderStyle = BorderStyle.FixedSingle;
+            txtBiletLoc.Font = new Font("Segoe UI", 10F);
+            txtBiletLoc.Location = new Point(460, 545);
+            txtBiletLoc.Name = "txtBiletLoc";
+            txtBiletLoc.Size = new Size(390, 27);
+            //
+            // lblBiletDescriere
+            //
+            lblBiletDescriere.AutoSize = true;
+            lblBiletDescriere.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblBiletDescriere.Location = new Point(0, 580);
+            lblBiletDescriere.Name = "lblBiletDescriere";
+            lblBiletDescriere.Text = "Descriere bilet";
+            //
+            // txtBiletDescriere
+            //
+            txtBiletDescriere.BorderStyle = BorderStyle.FixedSingle;
+            txtBiletDescriere.Font = new Font("Segoe UI", 10F);
+            txtBiletDescriere.Location = new Point(0, 605);
+            txtBiletDescriere.Multiline = true;
+            txtBiletDescriere.Name = "txtBiletDescriere";
+            txtBiletDescriere.ScrollBars = ScrollBars.Vertical;
+            txtBiletDescriere.Size = new Size(850, 90);
+            //
+            // panForm controls
+            //
             panForm.Controls.Add(txtBiletDescriere);
             panForm.Controls.Add(lblBiletDescriere);
             panForm.Controls.Add(txtBiletLoc);
@@ -237,7 +417,6 @@ namespace Proiect_PAOO_Organizare_Evenimente.UserControls
             panForm.Controls.Add(txtBiletDenumire);
             panForm.Controls.Add(lblBiletDenumire);
             panForm.Controls.Add(lblSectBilet);
-
             panForm.Controls.Add(picPreview);
             panForm.Controls.Add(lblImagineNume);
             panForm.Controls.Add(btnAlegeImagine);
@@ -247,7 +426,6 @@ namespace Proiect_PAOO_Organizare_Evenimente.UserControls
             panForm.Controls.Add(rdoVirtual);
             panForm.Controls.Add(rdoFizic);
             panForm.Controls.Add(lblTip);
-
             panForm.Controls.Add(txtDescriere);
             panForm.Controls.Add(lblDescriere);
             panForm.Controls.Add(dtpOra);
@@ -263,23 +441,27 @@ namespace Proiect_PAOO_Organizare_Evenimente.UserControls
             panForm.Controls.Add(txtNume);
             panForm.Controls.Add(lblNume);
             panForm.Controls.Add(lblSectEv);
-
             //
-            // panFooter (mereu vizibil, sub panForm)
+            // panFooter
             //
             panFooter.BackColor = Color.Transparent;
             panFooter.Location = new Point(30, 615);
             panFooter.Name = "panFooter";
             panFooter.Size = new Size(900, 55);
             panFooter.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-
+            //
+            // lblError
+            //
             lblError.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             lblError.ForeColor = Color.FromArgb(229, 57, 53);
             lblError.Location = new Point(0, 12);
             lblError.Name = "lblError";
             lblError.Size = new Size(680, 30);
             lblError.Visible = false;
-
+            //
+            // btnSalveaza
+            //
+            btnSalveaza.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             btnSalveaza.BackColor = Color.FromArgb(229, 57, 53);
             btnSalveaza.FlatAppearance.BorderSize = 0;
             btnSalveaza.FlatStyle = FlatStyle.Flat;
@@ -291,11 +473,11 @@ namespace Proiect_PAOO_Organizare_Evenimente.UserControls
             btnSalveaza.Text = "SALVEAZA EVENIMENT";
             btnSalveaza.UseVisualStyleBackColor = false;
             btnSalveaza.Click += btnSalveaza_Click;
-            btnSalveaza.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-
+            //
+            // panFooter controls
+            //
             panFooter.Controls.Add(btnSalveaza);
             panFooter.Controls.Add(lblError);
-
             //
             // UCCreateEvent
             //
@@ -308,48 +490,11 @@ namespace Proiect_PAOO_Organizare_Evenimente.UserControls
             Name = "UCCreateEvent";
             Size = new Size(960, 680);
             Load += UCCreateEvent_Load;
-
             ((System.ComponentModel.ISupportInitialize)picPreview).EndInit();
             panForm.ResumeLayout(false);
             panForm.PerformLayout();
             panFooter.ResumeLayout(false);
             ResumeLayout(false);
-        }
-
-        // Helpers
-        private static void ConfigSection(Label l, string text, int x, int y)
-        {
-            l.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
-            l.ForeColor = Color.FromArgb(33, 41, 73);
-            l.Location = new Point(x, y);
-            l.Size = new Size(680, 28);
-            l.Text = text;
-        }
-
-        private static void ConfigLabel(Label l, string text, int x, int y)
-        {
-            l.AutoSize = true;
-            l.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
-            l.Location = new Point(x, y);
-            l.Text = text;
-        }
-
-        private static void ConfigText(TextBox t, int x, int y, int width)
-        {
-            t.BorderStyle = BorderStyle.FixedSingle;
-            t.Font = new Font("Segoe UI", 10F);
-            t.Location = new Point(x, y);
-            t.Size = new Size(width, 27);
-        }
-
-        private static void ConfigMultiline(TextBox t, int x, int y, int width, int height)
-        {
-            t.BorderStyle = BorderStyle.FixedSingle;
-            t.Font = new Font("Segoe UI", 10F);
-            t.Location = new Point(x, y);
-            t.Multiline = true;
-            t.ScrollBars = ScrollBars.Vertical;
-            t.Size = new Size(width, height);
         }
 
         #endregion

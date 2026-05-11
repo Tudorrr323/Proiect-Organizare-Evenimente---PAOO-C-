@@ -70,20 +70,14 @@ namespace Proiect_PAOO_Organizare_Evenimente
             btnInregistrare = new Button();
             btnAnuleaza = new Button();
             SuspendLayout();
-
-            const int Margin = 40;
-            const int FullW = 540;            // ClientWidth 620 - 2*40
-            const int HalfW = 263;
-            const int Col2X = Margin + HalfW + 14;   // 317
-
             //
             // lblTitlu
             //
             lblTitlu.Font = new Font("Segoe UI", 22F, FontStyle.Bold);
             lblTitlu.ForeColor = Color.FromArgb(49, 112, 249);
-            lblTitlu.Location = new Point(Margin, 20);
+            lblTitlu.Location = new Point(40, 20);
             lblTitlu.Name = "lblTitlu";
-            lblTitlu.Size = new Size(FullW, 40);
+            lblTitlu.Size = new Size(540, 40);
             lblTitlu.Text = "Creeaza cont nou";
             lblTitlu.TextAlign = ContentAlignment.MiddleCenter;
             //
@@ -91,109 +85,204 @@ namespace Proiect_PAOO_Organizare_Evenimente
             //
             lblSubtitlu.Font = new Font("Segoe UI", 10F);
             lblSubtitlu.ForeColor = Color.Gray;
-            lblSubtitlu.Location = new Point(Margin, 60);
+            lblSubtitlu.Location = new Point(40, 60);
             lblSubtitlu.Name = "lblSubtitlu";
-            lblSubtitlu.Size = new Size(FullW, 22);
+            lblSubtitlu.Size = new Size(540, 22);
             lblSubtitlu.Text = "Completeaza datele tale pentru cont nou";
             lblSubtitlu.TextAlign = ContentAlignment.MiddleCenter;
-
             //
-            // ----- Rand 1: Prenume + Nume -----
+            // lblPrenume
             //
-            ConfigLabel(lblPrenume, "Prenume *", Margin, 100);
-            ConfigText(txtPrenume, Margin, 125, HalfW);
-
-            ConfigLabel(lblNume, "Nume", Col2X, 100);
-            ConfigText(txtNume, Col2X, 125, HalfW);
-
+            lblPrenume.AutoSize = true;
+            lblPrenume.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblPrenume.Location = new Point(40, 100);
+            lblPrenume.Name = "lblPrenume";
+            lblPrenume.Text = "Prenume *";
             //
-            // ----- Rand 2: Email + Telefon -----
+            // txtPrenume
             //
-            ConfigLabel(lblEmail, "Email *", Margin, 165);
-            ConfigText(txtEmail, Margin, 190, HalfW);
-
-            ConfigLabel(lblTelefon, "Telefon", Col2X, 165);
-            ConfigText(txtTelefon, Col2X, 190, HalfW);
-
+            txtPrenume.BorderStyle = BorderStyle.FixedSingle;
+            txtPrenume.Font = new Font("Segoe UI", 10.5F);
+            txtPrenume.Location = new Point(40, 125);
+            txtPrenume.Name = "txtPrenume";
+            txtPrenume.Size = new Size(263, 27);
             //
-            // ----- Rand 3: Parola + Confirma -----
+            // lblNume
             //
-            ConfigLabel(lblParola, "Parola *", Margin, 230);
-            ConfigText(txtParola, Margin, 255, HalfW);
+            lblNume.AutoSize = true;
+            lblNume.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblNume.Location = new Point(317, 100);
+            lblNume.Name = "lblNume";
+            lblNume.Text = "Nume";
+            //
+            // txtNume
+            //
+            txtNume.BorderStyle = BorderStyle.FixedSingle;
+            txtNume.Font = new Font("Segoe UI", 10.5F);
+            txtNume.Location = new Point(317, 125);
+            txtNume.Name = "txtNume";
+            txtNume.Size = new Size(263, 27);
+            //
+            // lblEmail
+            //
+            lblEmail.AutoSize = true;
+            lblEmail.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblEmail.Location = new Point(40, 165);
+            lblEmail.Name = "lblEmail";
+            lblEmail.Text = "Email *";
+            //
+            // txtEmail
+            //
+            txtEmail.BorderStyle = BorderStyle.FixedSingle;
+            txtEmail.Font = new Font("Segoe UI", 10.5F);
+            txtEmail.Location = new Point(40, 190);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(263, 27);
+            //
+            // lblTelefon
+            //
+            lblTelefon.AutoSize = true;
+            lblTelefon.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblTelefon.Location = new Point(317, 165);
+            lblTelefon.Name = "lblTelefon";
+            lblTelefon.Text = "Telefon";
+            //
+            // txtTelefon
+            //
+            txtTelefon.BorderStyle = BorderStyle.FixedSingle;
+            txtTelefon.Font = new Font("Segoe UI", 10.5F);
+            txtTelefon.Location = new Point(317, 190);
+            txtTelefon.Name = "txtTelefon";
+            txtTelefon.Size = new Size(263, 27);
+            //
+            // lblParola
+            //
+            lblParola.AutoSize = true;
+            lblParola.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblParola.Location = new Point(40, 230);
+            lblParola.Name = "lblParola";
+            lblParola.Text = "Parola *";
+            //
+            // txtParola
+            //
+            txtParola.BorderStyle = BorderStyle.FixedSingle;
+            txtParola.Font = new Font("Segoe UI", 10.5F);
+            txtParola.Location = new Point(40, 255);
+            txtParola.Name = "txtParola";
             txtParola.PasswordChar = '*';
-
-            ConfigLabel(lblConfirma, "Confirma parola *", Col2X, 230);
-            ConfigText(txtConfirma, Col2X, 255, HalfW);
+            txtParola.Size = new Size(263, 27);
+            //
+            // lblConfirma
+            //
+            lblConfirma.AutoSize = true;
+            lblConfirma.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblConfirma.Location = new Point(317, 230);
+            lblConfirma.Name = "lblConfirma";
+            lblConfirma.Text = "Confirma parola *";
+            //
+            // txtConfirma
+            //
+            txtConfirma.BorderStyle = BorderStyle.FixedSingle;
+            txtConfirma.Font = new Font("Segoe UI", 10.5F);
+            txtConfirma.Location = new Point(317, 255);
+            txtConfirma.Name = "txtConfirma";
             txtConfirma.PasswordChar = '*';
-
+            txtConfirma.Size = new Size(263, 27);
             //
-            // ----- Rand 4: Rol (radio) + Companie -----
+            // lblRol
             //
-            ConfigLabel(lblRol, "Rol *", Margin, 295);
+            lblRol.AutoSize = true;
+            lblRol.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblRol.Location = new Point(40, 295);
+            lblRol.Name = "lblRol";
+            lblRol.Text = "Rol *";
+            //
+            // rdoClient
+            //
             rdoClient.AutoSize = true;
             rdoClient.Font = new Font("Segoe UI", 10F);
-            rdoClient.Location = new Point(Margin, 320);
+            rdoClient.Location = new Point(40, 320);
             rdoClient.Name = "rdoClient";
             rdoClient.Text = "Client";
             rdoClient.CheckedChanged += rdoClient_CheckedChanged;
-
+            //
+            // rdoManager
+            //
             rdoManager.AutoSize = true;
             rdoManager.Font = new Font("Segoe UI", 10F);
-            rdoManager.Location = new Point(Margin + 100, 320);
+            rdoManager.Location = new Point(140, 320);
             rdoManager.Name = "rdoManager";
             rdoManager.Text = "Manager";
             rdoManager.CheckedChanged += rdoManager_CheckedChanged;
-
-            ConfigLabel(lblCompanie, "Companie *", Col2X, 295);
-            ConfigText(txtCompanie, Col2X, 319, HalfW);
-
             //
-            // ----- Rand 5: Data nasterii FULL WIDTH -----
+            // lblCompanie
             //
-            ConfigLabel(lblBday, "Data nasterii", Margin, 360);
-            dtpBday.Format = DateTimePickerFormat.Short;
+            lblCompanie.AutoSize = true;
+            lblCompanie.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblCompanie.Location = new Point(317, 295);
+            lblCompanie.Name = "lblCompanie";
+            lblCompanie.Text = "Companie *";
+            //
+            // txtCompanie
+            //
+            txtCompanie.BorderStyle = BorderStyle.FixedSingle;
+            txtCompanie.Font = new Font("Segoe UI", 10.5F);
+            txtCompanie.Location = new Point(317, 319);
+            txtCompanie.Name = "txtCompanie";
+            txtCompanie.Size = new Size(263, 27);
+            //
+            // lblBday
+            //
+            lblBday.AutoSize = true;
+            lblBday.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblBday.Location = new Point(40, 360);
+            lblBday.Name = "lblBday";
+            lblBday.Text = "Data nasterii";
+            //
+            // dtpBday
+            //
             dtpBday.Font = new Font("Segoe UI", 10F);
-            dtpBday.Location = new Point(Margin, 385);
+            dtpBday.Format = DateTimePickerFormat.Short;
+            dtpBday.Location = new Point(40, 385);
             dtpBday.Name = "dtpBday";
-            dtpBday.Size = new Size(FullW, 27);
-
+            dtpBday.Size = new Size(540, 27);
             //
             // lblError
             //
             lblError.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
             lblError.ForeColor = Color.FromArgb(229, 57, 53);
-            lblError.Location = new Point(Margin, 425);
+            lblError.Location = new Point(40, 425);
             lblError.Name = "lblError";
-            lblError.Size = new Size(FullW, 22);
+            lblError.Size = new Size(540, 22);
             lblError.TextAlign = ContentAlignment.MiddleCenter;
             lblError.Visible = false;
-
             //
-            // Butoane jos
+            // btnInregistrare
             //
             btnInregistrare.BackColor = Color.FromArgb(229, 57, 53);
             btnInregistrare.FlatAppearance.BorderSize = 0;
             btnInregistrare.FlatStyle = FlatStyle.Flat;
             btnInregistrare.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             btnInregistrare.ForeColor = Color.White;
-            btnInregistrare.Location = new Point(Margin, 460);
+            btnInregistrare.Location = new Point(40, 460);
             btnInregistrare.Name = "btnInregistrare";
             btnInregistrare.Size = new Size(360, 45);
             btnInregistrare.Text = "INREGISTREAZA-MA";
             btnInregistrare.UseVisualStyleBackColor = false;
             btnInregistrare.Click += btnInregistrare_Click;
-
+            //
+            // btnAnuleaza
+            //
             btnAnuleaza.FlatAppearance.BorderColor = Color.Gray;
             btnAnuleaza.FlatStyle = FlatStyle.Flat;
             btnAnuleaza.Font = new Font("Segoe UI", 11F);
             btnAnuleaza.ForeColor = Color.Gray;
-            btnAnuleaza.Location = new Point(Margin + 370, 460);
+            btnAnuleaza.Location = new Point(410, 460);
             btnAnuleaza.Name = "btnAnuleaza";
             btnAnuleaza.Size = new Size(170, 45);
             btnAnuleaza.Text = "Anuleaza";
             btnAnuleaza.UseVisualStyleBackColor = true;
             btnAnuleaza.Click += btnAnuleaza_Click;
-
             //
             // SignUpForm
             //
@@ -234,22 +323,6 @@ namespace Proiect_PAOO_Organizare_Evenimente
             Load += SignUpForm_Load;
             ResumeLayout(false);
             PerformLayout();
-        }
-
-        private static void ConfigLabel(Label l, string text, int x, int y)
-        {
-            l.AutoSize = true;
-            l.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
-            l.Location = new Point(x, y);
-            l.Text = text;
-        }
-
-        private static void ConfigText(TextBox t, int x, int y, int width)
-        {
-            t.BorderStyle = BorderStyle.FixedSingle;
-            t.Font = new Font("Segoe UI", 10.5F);
-            t.Location = new Point(x, y);
-            t.Size = new Size(width, 27);
         }
 
         #endregion

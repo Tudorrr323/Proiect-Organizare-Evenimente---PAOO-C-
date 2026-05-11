@@ -66,7 +66,11 @@ namespace Proiect_PAOO_Organizare_Evenimente.UserControls
             panFiltre.Size = new Size(900, 140);
             panFiltre.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
 
-            ConfigLabel(lblCautare, "Cauta dupa nume", 20, 12);
+            lblCautare.AutoSize = true;
+            lblCautare.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblCautare.Location = new Point(20, 12);
+            lblCautare.Name = "lblCautare";
+            lblCautare.Text = "Cauta dupa nume";
             txtCautare.BorderStyle = BorderStyle.FixedSingle;
             txtCautare.Font = new Font("Segoe UI", 10F);
             txtCautare.Location = new Point(20, 37);
@@ -75,7 +79,11 @@ namespace Proiect_PAOO_Organizare_Evenimente.UserControls
             txtCautare.Size = new Size(320, 27);
             txtCautare.KeyDown += txtCautare_KeyDown;
 
-            ConfigLabel(lblOrganizator, "Organizator", 360, 12);
+            lblOrganizator.AutoSize = true;
+            lblOrganizator.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblOrganizator.Location = new Point(360, 12);
+            lblOrganizator.Name = "lblOrganizator";
+            lblOrganizator.Text = "Organizator";
             cboOrganizator.DropDownStyle = ComboBoxStyle.DropDownList;
             cboOrganizator.Font = new Font("Segoe UI", 10F);
             cboOrganizator.Location = new Point(360, 37);
@@ -85,7 +93,11 @@ namespace Proiect_PAOO_Organizare_Evenimente.UserControls
             //
             // ----- Rand 2: Perioada -----
             //
-            ConfigLabel(lblPerioada, "Perioada (bifeaza pentru a activa)", 20, 75);
+            lblPerioada.AutoSize = true;
+            lblPerioada.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblPerioada.Location = new Point(20, 75);
+            lblPerioada.Name = "lblPerioada";
+            lblPerioada.Text = "Perioada (bifeaza pentru a activa)";
 
             dtpDataMin.Format = DateTimePickerFormat.Short;
             dtpDataMin.Font = new Font("Segoe UI", 10F);
@@ -189,14 +201,6 @@ namespace Proiect_PAOO_Organizare_Evenimente.UserControls
             panFiltre.ResumeLayout(false);
             panFiltre.PerformLayout();
             ResumeLayout(false);
-        }
-
-        private static void ConfigLabel(Label l, string text, int x, int y)
-        {
-            l.AutoSize = true;
-            l.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
-            l.Location = new Point(x, y);
-            l.Text = text;
         }
 
         #endregion

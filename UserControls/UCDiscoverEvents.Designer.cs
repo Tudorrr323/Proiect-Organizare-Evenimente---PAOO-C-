@@ -76,7 +76,11 @@ namespace Proiect_PAOO_Organizare_Evenimente.UserControls
             //
             // Cautare
             //
-            ConfigLabel(lblCautare, "Cauta dupa nume", 20, 15);
+            lblCautare.AutoSize = true;
+            lblCautare.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblCautare.Location = new Point(20, 15);
+            lblCautare.Name = "lblCautare";
+            lblCautare.Text = "Cauta dupa nume";
             txtCautare.BorderStyle = BorderStyle.FixedSingle;
             txtCautare.Font = new Font("Segoe UI", 10F);
             txtCautare.Location = new Point(20, 40);
@@ -87,22 +91,50 @@ namespace Proiect_PAOO_Organizare_Evenimente.UserControls
             //
             // Organizator
             //
-            ConfigLabel(lblOrganizator, "Organizator", 320, 15);
-            ConfigCombo(cboOrganizator, 320, 40, 200);
+            lblOrganizator.AutoSize = true;
+            lblOrganizator.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblOrganizator.Location = new Point(320, 15);
+            lblOrganizator.Name = "lblOrganizator";
+            lblOrganizator.Text = "Organizator";
+            cboOrganizator.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboOrganizator.Font = new Font("Segoe UI", 10F);
+            cboOrganizator.Location = new Point(320, 40);
+            cboOrganizator.Name = "cboOrganizator";
+            cboOrganizator.Size = new Size(200, 27);
             //
             // Oras
             //
-            ConfigLabel(lblOras, "Oras", 540, 15);
-            ConfigCombo(cboOras, 540, 40, 160);
+            lblOras.AutoSize = true;
+            lblOras.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblOras.Location = new Point(540, 15);
+            lblOras.Name = "lblOras";
+            lblOras.Text = "Oras";
+            cboOras.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboOras.Font = new Font("Segoe UI", 10F);
+            cboOras.Location = new Point(540, 40);
+            cboOras.Name = "cboOras";
+            cboOras.Size = new Size(160, 27);
             //
             // Tip
             //
-            ConfigLabel(lblTip, "Tip", 720, 15);
-            ConfigCombo(cboTip, 720, 40, 150);
+            lblTip.AutoSize = true;
+            lblTip.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblTip.Location = new Point(720, 15);
+            lblTip.Name = "lblTip";
+            lblTip.Text = "Tip";
+            cboTip.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboTip.Font = new Font("Segoe UI", 10F);
+            cboTip.Location = new Point(720, 40);
+            cboTip.Name = "cboTip";
+            cboTip.Size = new Size(150, 27);
             //
             // ----- Rand 2: Perioada (datepickers cu ShowCheckBox) -----
             //
-            ConfigLabel(lblPerioada, "Perioada (bifeaza pentru a activa)", 20, 80);
+            lblPerioada.AutoSize = true;
+            lblPerioada.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblPerioada.Location = new Point(20, 80);
+            lblPerioada.Name = "lblPerioada";
+            lblPerioada.Text = "Perioada (bifeaza pentru a activa)";
 
             dtpDataMin.Format = DateTimePickerFormat.Short;
             dtpDataMin.Font = new Font("Segoe UI", 10F);
@@ -211,22 +243,6 @@ namespace Proiect_PAOO_Organizare_Evenimente.UserControls
             panFiltre.ResumeLayout(false);
             panFiltre.PerformLayout();
             ResumeLayout(false);
-        }
-
-        private static void ConfigLabel(Label l, string text, int x, int y)
-        {
-            l.AutoSize = true;
-            l.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
-            l.Location = new Point(x, y);
-            l.Text = text;
-        }
-
-        private static void ConfigCombo(ComboBox c, int x, int y, int width)
-        {
-            c.DropDownStyle = ComboBoxStyle.DropDownList;
-            c.Font = new Font("Segoe UI", 10F);
-            c.Location = new Point(x, y);
-            c.Size = new Size(width, 27);
         }
 
         #endregion

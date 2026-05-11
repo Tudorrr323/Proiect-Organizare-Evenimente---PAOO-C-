@@ -1,0 +1,242 @@
+[P0] 
+[P1] 
+[P2] 
+[P3] PROIECT
+[P4] PAOO
+[P5] 
+[P6] TEMA: ...... 
+[P7] 
+[P8] 
+[P9] Prof.....
+[P10] Student: 	
+[P11] Grupa: 
+[P12] 
+[P13] 
+[P14] 2026
+[P15] 
+[P16] 
+[P17] 
+[P18] 
+[P19] Cuprins:
+[P20]  Analiza problemei
+[P21]  Specificarea cerintelor
+[P22] Proiectarea la nivel conceptual
+[P23] Proiectarea la nivel logic
+[P24] Proiectarea la nivel fizic
+[P25] Implementare
+[P26] Descrierea aplicatiei
+[P27] Concluzie
+[P28] Bibliografie
+[P29] 10. Anexe
+[P30] 
+[P31] 
+[P32] 
+[P33] 
+[P34] 
+[P35] 
+[P36] 
+[P37] 
+[P38] 
+[P39] 
+[P40] 1.Analiza problemei: Gestiunea unui Cabinet Medical
+[P41] Un cabinet medical este locul unde pacienții vin pentru consultații, tratamente și monitorizarea sănătății lor. Pentru ca acest proces să fie eficient și fără probleme, este necesară o gestionare atentă a tuturor activităților: programarea pacienților, evidența fișelor medicale, organizarea medicilor și menținerea echipamentelor medicale. Fiecare dintre aceste elemente contribuie la buna funcționare a cabinetului și la satisfacția pacienților.
+[P42] Într-un cabinet medical, mai multe categorii de persoane și resurse interacționează zilnic. Printre cele mai importante entități se numără pacienții, care solicită servicii medicale, medicii, care oferă consultații și tratamente, consultațiile, care reprezintă întâlnirile dintre pacienți și medici pentru diagnosticare și tratament, fișele medicale, care conțin istoricul medical al pacienților, echipamentele medicale, care sunt utilizate pentru diagnostic și tratament, și administratorii, care sunt responsabili de organizarea activităților din cabinet. Fiecare dintre aceste entități are un rol bine definit și contribuie la buna desfășurare a activităților din cabinet.
+[P43] Pacienții sunt persoanele care au nevoie de servicii medicale. Ei vin la cabinet pentru consultații, analize sau tratamente specifice. Pentru a fi deserviți eficient, trebuie să fie înregistrați în evidența cabinetului cu nume, prenume, cod numeric personal, număr de telefon și istoricul medical. Pacienții interacționează direct cu medicii în timpul consultațiilor și primesc recomandări pentru tratamente sau investigații suplimentare. De asemenea, unii pacienți necesită monitorizare constantă, revenind periodic la cabinet pentru controale suplimentare sau ajustarea tratamentelor. O comunicare eficientă între pacienți și personalul medical asigură un act medical corect și personalizat.
+[P44] Medicii sunt responsabili de îngrijirea pacienților. Ei pun diagnostice, prescriu tratamente și urmăresc evoluția pacienților. Fiecare medic are o specializare, cum ar fi cardiologie, dermatologie sau medicină generală, și un program bine stabilit. Medicii interacționează cu pacienții, administratorii și echipamentele medicale în desfășurarea activității lor zilnice. Pe lângă activitatea de diagnostic și tratament, medicii au responsabilitatea de a informa pacienții despre prevenția bolilor și despre stilul de viață adecvat pentru menținerea sănătății.
+[P45] Consultațiile sunt întâlnirile dintre pacienți și medici. Acestea pot fi de rutină sau determinate de o problemă medicală specifică. Fiecare consultație include identificarea pacientului, evaluarea stării de sănătate, stabilirea unui diagnostic și recomandarea unui tratament sau a unor investigații suplimentare. Programarea consultațiilor trebuie gestionată eficient pentru a evita suprapunerile și pentru a asigura un flux optim de pacienți. De asemenea, consultațiile pot include recomandări pentru teste suplimentare, prescrierea unor tratamente medicamentoase sau direcționarea către alți specialiști pentru investigații mai detaliate.
+[P46] Fișele medicale conțin istoricul consultațiilor și al tratamentelor fiecărui pacient. Ele sunt esențiale pentru monitorizarea stării de sănătate și pentru luarea unor decizii informate asupra tratamentului. Acestea includ diagnosticul anterior, tratamentele prescrise, intervențiile medicale anterioare și eventualele reacții adverse sau alergii. Fișele medicale sunt actualizate de către medici după fiecare consultație și sunt esențiale pentru continuitatea tratamentului. O evidență bine organizată permite medicilor să observe evoluția pacienților și să ajusteze tratamentele conform necesităților fiecăruia.
+[P47] Un cabinet medical utilizează diverse echipamente pentru diagnostic și tratament, printre care aparate de măsurat tensiunea arterială, electrocardiografe, ecografe și instrumente pentru analize de laborator. Aceste echipamente trebuie să fie întreținute și verificate periodic pentru a asigura funcționarea corectă și siguranța pacienților. Pe lângă întreținere, trebuie gestionată și aprovizionarea cu materiale consumabile necesare pentru utilizarea echipamentelor, cum ar fi reactivi pentru analize, seringi sau materiale de protecție.
+[P48] Administratorii sunt responsabili de organizarea cabinetului și de gestionarea activităților administrative. Rolurile lor includ planificarea programărilor, gestionarea fișelor pacienților, coordonarea activităților medicilor și monitorizarea echipamentelor și aprovizionarea cabinetului. Fără un management eficient al activităților, cabinetul medical nu ar putea funcționa în mod corespunzător. Administratorii trebuie să se asigure că programările sunt organizate astfel încât pacienții să nu fie nevoiți să aștepte prea mult și că resursele cabinetului sunt utilizate eficient.
+[P49] Interacțiunea dintre entități este esențială pentru buna funcționare a cabinetului medical. Pacienții contactează administratorii pentru a se programa la consultații, administratorii verifică disponibilitatea medicilor și organizează programările, medicii preiau pacienții, efectuează consultațiile și actualizează fișele medicale, echipamentele medicale sunt utilizate în timpul consultațiilor și trebuie întreținute periodic, fișele medicale sunt accesate de medici pentru a lua decizii informate asupra tratamentului, iar administratorii se ocupă de achiziția echipamentelor necesare și de gestionarea stocurilor. Această colaborare între entități asigură un flux continuu al activităților și o experiență mai bună pentru pacienți. O comunicare eficientă între personalul medical și administrativ ajută la optimizarea timpului și la evitarea situațiilor de suprasolicitare a personalului sau de întârzieri neprevăzute în acordarea consultațiilor.
+[P50] Gestionarea unui cabinet medical implică un proces complex, în care fiecare entitate joacă un rol esențial. O bună organizare și o comunicare eficientă între pacienți, medici și administratori contribuie la îmbunătățirea calității serviciilor medicale. Printr-o planificare atentă și prin utilizarea corectă a resurselor disponibile, cabinetul poate funcționa fără probleme, oferind pacienților îngrijirea de care au nevoie. În plus, dezvoltarea unui sistem de feedback din partea pacienților poate contribui la îmbunătățirea continuă a serviciilor și la creșterea gradului de satisfacție a acestora.
+[P51] 2. Funcționalitățile aplicației
+[P52] Aplicația va oferi următoarele funcționalități, adaptate fiecărui rol implicat:
+[P53] Pentru medic:
+[P54] Gestionarea eficientă a programărilor pacienților
+[P55] Acces rapid la istoricul medical al pacienților
+[P56] Adăugarea și actualizarea fișelor medicale în timp real
+[P57] Prescrierea rețetelor electronice pentru pacienți
+[P58] Pentru administrator:
+[P59] Coordonarea programărilor și gestionarea disponibilității medicilor
+[P60] Monitorizarea și administrarea echipamentelor medicale și a stocurilor necesare
+[P61] Gestionarea utilizatorilor și atribuirea drepturilor de acces în sistem
+[P62] Monitorizarea performanței cabinetului prin rapoarte statistice detaliate
+[P63] 3.Modelul Conceptual al Datelor (MCD) pentru Cabinetul Medical
+[P64] Cabinetul medical administrează mai multe entități esențiale, fiecare având roluri bine definite și relații interconectate, care permit gestionarea eficientă a activităților.
+[P65] 1. Pacienți
+[P66] Pacienții sunt persoanele care beneficiază de servicii medicale. Fiecare pacient este identificat prin:
+[P67] ID pacient (identificator unic)
+[P68] Nume
+[P69] Prenume
+[P70] CNP (cod numeric personal)
+[P71] Telefon
+[P72] ID medic (medicul curant)
+[P73] 2. Medici
+[P74] Medicii sunt specialiștii care oferă consultații și tratamente. Atributele lor includ:
+[P75] ID medic (identificator unic)
+[P76] Nume
+[P77] Specializare
+[P78] Username și parolă pentru acces în sistem
+[P79] 3. Consultații
+[P80] Consultațiile reprezintă întâlnirile dintre pacienți și medici pentru diagnostic și tratament. Fiecare consultație este caracterizată prin:
+[P81] ID consultație (identificator unic)
+[P82] ID pacient (pacientul consultat)
+[P83] ID medic (medicul care consultă)
+[P84] Data consultației
+[P85] Ora consultației
+[P86] Detalii despre consultație
+[P87] 4. Fișe medicale
+[P88] Fișele medicale conțin istoricul tratamentelor și diagnosticul pacienților. Fiecare fișă medicală include:
+[P89] ID fișă medicală (identificator unic)
+[P90] ID medic (medicul care a completat fișa)
+[P91] ID pacient (pacientul la care se referă fișa)
+[P92] Diagnostic
+[P93] Tratament prescris
+[P94] Data înregistrării fișei
+[P95] 5. Echipamente
+[P96] Echipamentele medicale sunt utilizate pentru diagnostic și tratament. Atributele fiecărui echipament sunt:
+[P97] ID echipament (identificator unic)
+[P98] Nume echipament
+[P99] Descriere
+[P100] Cantitate disponibilă
+[P101] 6. Comenzi
+[P102] Comenzile sunt acțiuni administrative pentru gestionarea echipamentelor și resurselor medicale. Fiecare comandă conține:
+[P103] ID comandă (identificator unic)
+[P104] Comanda efectuată
+[P105] Utilizatorul care a efectuat comanda
+[P106] Data înregistrării comenzii
+[P107] 7. Administratori
+[P108] Administratorii sunt responsabili de gestionarea cabinetului, având următoarele informații:
+[P109] ID administrator (identificator unic)
+[P110] Username
+[P111] Parolă
+[P112] 
+[P113] 
+[P114] 
+[P115] 
+[P116] 
+[P117] 
+[P118] 4.Proiectarea la nivel logic
+[P119] 
+[P120] 5. Proiectarea la nivel fizic
+[P121] Administrator:
+[P122] 
+[P123] Medici:
+[P124] 
+[P125] Comenzi: 
+[P126] Consultatii:
+[P127] 
+[P128] Echipamente:
+[P129] 
+[P130] Fise_medicale:
+[P131] 
+[P132] Pacienti:
+[P133] 
+[P134] 6. Implementare – Limbaje, Tehnologii și Librării
+[P135] Pentru dezvoltarea aplicației de gestionare a cabinetului medical în C#, au fost utilizate următoarele tehnologii și librării:
+[P136] 1. Limbaj de programare:
+[P137] C# – Limbajul principal folosit pentru implementarea logicii aplicației și a interfeței grafice cu ajutorul Windows Forms (WinForms).
+[P138] 2. Bază de date:
+[P139] MySQL – Folosit pentru stocarea și gestionarea informațiilor despre pacienți, medici, consultații, fișele medicale și echipamente.
+[P140] 3. Conectarea la baza de date:
+[P141] MySql.Data (MySqlConnector) – Librărie .NET utilizată pentru conectarea aplicației C# la baza de date MySQL, permițând executarea de interogări, inserări, actualizări și ștergeri.
+[P142] 4. Export de date:
+[P143] iTextSharp – Bibliotecă utilizată pentru generarea fișierelor PDF din datele afișate în interfața grafică (liste de medici, consultații etc.).
+[P144] 5. Generarea rapoartelor grafice:
+[P145] System.Windows.Forms.DataVisualization.Charting – Componentă nativă a WinForms pentru desenarea de grafice și diagrame bazate pe date (de ex. număr consultații pe oră pentru un medic).
+[P146] 
+[P147] Mod de utilizare a tehnologiilor:
+[P148] WinForms (C#) – Permite dezvoltarea unei interfețe grafice moderne și intuitive, structurată pe taburi separate pentru funcționalități (pacienți, consultații, fișe medicale etc.), cu controale ușor de folosit (DataGridView, TabControl, Button, etc.).
+[P149] MySQL – Oferă persistență fiabilă a datelor și permite relaționarea clară între entitățile sistemului (medici, pacienți, consultații, fișe).
+[P150] MySql.Data – Asigură comunicarea eficientă dintre aplicație și baza de date, cu execuții de comenzi SQL parametrizate, prevenind injecțiile SQL.
+[P151] iTextSharp – Este utilizat pentru generarea automată a rapoartelor PDF exportabile din tabelele afișate în interfață.
+[P152] Charting – Permite vizualizarea activității medicale în mod grafic, direct din aplicație, oferind suport pentru luarea deciziilor rapide.
+[P153] 7.Manual de Utilizare - Cabinet Medical Management System
+[P154] 1. Introducere
+[P155] Cabinet Medical Management System este o aplicație dezvoltată în C# folosind WinForms, destinată gestionării eficiente a activităților unui cabinet medical. Aplicația permite autentificarea separată a administratorilor și medicilor, gestionarea pacienților proprii, consultațiilor și fișelor medicale, precum și generarea de rapoarte statistice și exporturi PDF, contribuind astfel la o administrare modernă și rapidă a actului medical.
+[P156] 2. Interfața Principală
+[P157] La lansarea aplicației, utilizatorul va vedea fereastra principală cu următoarele opțiuni:
+[P158] Logare ca Administrator – Permite accesul la funcționalitățile de administrare a medicilor, echipamentelor și generarea rapoartelor.
+[P159] Logare ca Medic – Oferă acces la gestionarea pacienților, consultațiilor și fișelor medicale.
+[P160] Ieșire – Închide aplicația.
+[P161] 
+[P162] 
+[P163] 3. Autentificare
+[P164] Introduceți username și parolă în câmpurile corespunzătoare.
+[P165] Dacă datele sunt valide, se va deschide meniul corespunzător rolului utilizatorului.
+[P166] În cazul unei autentificări eșuate, aplicația va afișa un mesaj de eroare.
+[P167] 
+[P168] 
+[P169] 4. Funcționalități pentru Administrator
+[P170] 4.1. Gestionarea Medicilor
+[P171] Vizualizarea listei de medici disponibili.
+[P172] Adăugarea, editarea și ștergerea medicilor.
+[P173] Filtrarea medicilor după specializare. 
+[P174] 4.2. Gestionarea Echipamentelor
+[P175] Vizualizarea echipamentelor disponibile în cabinet.
+[P176] Adăugarea și ștergerea echipamentelor.
+[P177] 
+[P178] 4.3. Generare Rapoarte
+[P179] Crearea unui raport cu consultațiile efectuate de un anumit medic.
+[P180] Crearea unui raport cu toți medicii activi la o anumită dată.
+[P181] 
+[P182] 
+[P183] 
+[P184] 
+[P185] 
+[P186] 
+[P187] 5. Funcționalități pentru Medici
+[P188] 5.1. Gestionarea Pacienților
+[P189] Vizualizarea pacienților alocați unui medic.
+[P190] Adăugarea și ștergerea pacienților din sistem.
+[P191] 
+[P192] 5.2. Gestionarea Consultațiilor
+[P193] Vizualizarea consultațiilor programate pentru un medic.
+[P194] Adăugarea și ștergerea consultațiilor.
+[P195] 
+[P196] 5.3. Gestionarea Fișelor Medicale
+[P197] Vizualizarea fișelor medicale ale pacienților.
+[P198] Adăugarea și ștergerea fișelor medicale.
+[P199] Căutare fișe medicale după CNP pacient.
+[P200] 
+[P201] 
+[P202] 6. Export și Securitate
+[P203] Toate datele sunt stocate într-o bază de date MySQL.
+[P204] Activitatea utilizatorilor este înregistrată automat pentru securitate și audit.
+[P205] 
+[P206] 7. Depanare
+[P207] 7.1. Probleme cu baza de date
+[P208] Eroare la conectarea la MySQL: Verificați credentialele și asigurați-vă că serverul MySQL este activ.
+[P209] 7.2. Probleme la rularea aplicației
+[P210] Aplicația nu pornește: Verificați dacă toate bibliotecile necesare sunt incluse și configurate corect.
+[P211] 7.3. Probleme cu autentificarea
+[P212] Autentificare eșuată: Verificați corectitudinea username-ului și parolei introduse.
+[P213] 
+[P214] Acest manual oferă instrucțiuni detaliate pentru utilizarea aplicației și soluții pentru eventualele probleme tehnice.
+[P215] 8. Concluzie
+[P216] Acest proiect propune o soluție eficientă pentru gestionarea unui cabinet medical, utilizând tehnologii moderne și o bază de date relațională bine structurată. Printr-o analiză detaliată a cerințelor și a proceselor medicale, a fost realizat un sistem informatic capabil să optimizeze atât activitățile clinice, cât și cele administrative.
+[P217] Modelul conceptual și logic al bazei de date asigură o organizare clară a entităților (pacienți, medici, consultații, fișe medicale, echipamente), facilitând accesul rapid la informații și actualizarea lor în timp real. Implementarea aplicației în C#, folosind WinForms pentru interfață și MySQL pentru stocarea datelor, a permis dezvoltarea unei soluții stabile, responsive și ușor de utilizat.
+[P218] Integrarea cu biblioteci precum iTextSharp pentru generarea fișierelor PDF și Charting pentru rapoarte vizuale oferă funcționalități avansate pentru monitorizarea și raportarea activității medicale.
+[P219] Prin această aplicație, administratorii pot gestiona eficient programările, echipamentele și utilizatorii sistemului, iar medicii beneficiază de acces direct la istoricul pacienților, cu posibilitatea de a adăuga sau consulta fișe medicale și consultații. Modul de autentificare pe roluri contribuie la securizarea datelor și la personalizarea interfeței în funcție de drepturi.
+[P220] În concluzie, Cabinet Medical Management System în varianta C# WinForms oferă o platformă scalabilă și practică pentru cabinetele medicale moderne, contribuind la reducerea timpilor administrativi, creșterea eficienței în actul medical și îmbunătățirea experienței pacientului. Aplicația este un model funcțional ce poate fi adaptat ușor și pentru alte unități medicale.
+[P221] 
+[P222] 
+[P223] BIBLIOGRAFIE:
+[P224] -Suport de curs PAOO, prof.
+[P225] -…
+[P226] 
+[P227] 
+[P228] 
+[P229] 
+[P230] 
+[P231] 
+[P232] 
+[P233] 
+[P234] Anexe
+[P235] Cod
+[P236] 
+[P237]  
+[P238] 
+[P239] 
+[P240] 
+[P241] 
