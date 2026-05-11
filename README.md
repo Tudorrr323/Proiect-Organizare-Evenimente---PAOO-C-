@@ -224,24 +224,21 @@ Sau apesi **F5** in Visual Studio.
 
 ## Initializare baza de date
 
-Scripturile SQL se ruleaza in pgAdmin Query Tool, **conectat la baza `ticketa`**, in ordinea urmatoare:
+Pentru importul bazei de date se foloseste un **singur fisier** care contine toate scripturile necesare consolidate in ordinea corecta:
 
-| # | Fisier | Descriere |
-| - | --- | --- |
-| 1 | `db/schema.sql` | Creeaza tabelele Users, Orase, Evenimente, Bilet, Cos, Cos_Bilet |
-| 2 | `db/data.sql` | Date initiale: 11 useri test, 320 orase, 67 evenimente, 199 bilete |
-| 3 | `db/update_imgpath.sql` | Curata URL-urile Supabase din `imgpath` -> doar nume de fisier |
-| 4 | `db/iabilet_top21.sql` | 21 evenimente reale preluate de pe iabilet.ro |
-| 5 | `db/virtual_events_10.sql` | 10 evenimente virtuale (WWDC, Build, etc.) |
-| 6 | `db/admin_migration.sql` | Adauga coloana `is_suspended` si suport pentru rolul Admin |
-| 7 | `db/create_admin_account.sql` | Creeaza contul admin@ticketa.ro / 123456 |
-| 8 | `db/fix_sequences.sql` | **Obligatoriu** - reseteaza sequence-urile IDENTITY dupa INSERT-urile cu ID explicit |
+| Fisier | Descriere |
+| --- | --- |
+| `db/import_complete.sql` | Schema + date initiale + evenimente reale + cont admin + reset sequences, totul intr-o singura rulare |
 
-**Toate scripturile sunt idempotente** - pot fi rulate de mai multe ori fara eroare.
+**Pasi:**
 
-Daca vrei doar setup minimal, ruleaza pasii 1, 2, 3, 6, 7, 8.
+1. Deschide pgAdmin Query Tool, conectat la baza `ticketa`
+2. Deschide fisierul `db/import_complete.sql`
+3. Apesi **Execute** (F5)
 
-> **Important:** Pasul 8 (`fix_sequences.sql`) trebuie rulat **dupa** orice script care insereaza randuri cu ID explicit. Daca il sari, aplicatia va da `duplicate key value violates unique constraint` la primul INSERT facut din UI.
+Scriptul este idempotent - poate fi rulat de mai multe ori fara eroare.
+
+> **Nota:** Scripturile individuale (`schema.sql`, `data.sql`, `admin_migration.sql`, etc.) sunt pastrate in folderul `db/` pentru referinta, dar nu trebuie rulate separat. Toate sunt incluse in `import_complete.sql`.
 
 ---
 

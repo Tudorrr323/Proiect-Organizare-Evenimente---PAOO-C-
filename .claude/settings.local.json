@@ -33,7 +33,8 @@
       "Bash(grep -n '\"[^\"]\\\\{15,\\\\}\"' 'D:\\\\Programs\\\\C#\\\\Proiect_PAOO_Organizare_Evenimente\\\\Form1.cs')",
       "Bash(grep -n '\"[^\"]\\\\{15,\\\\}\"' 'D:\\\\Programs\\\\C#\\\\Proiect_PAOO_Organizare_Evenimente\\\\BLL\\\\AuthService.cs')",
       "Bash(grep -n '\"[^\"]\\\\{10,\\\\}\"' 'D:\\\\Programs\\\\C#\\\\Proiect_PAOO_Organizare_Evenimente\\\\Forms\\\\MainMenu.cs')",
-      "Bash(python *)"
+      "Bash(python *)",
+      "Bash(dir D:\\\\Programs\\\\C#\\\\Proiect_PAOO_Organizare_Evenimente\\\\db *)"
     ]
   }
 }
